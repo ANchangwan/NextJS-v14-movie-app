@@ -1,11 +1,16 @@
 import Link from "next/link";
-
-export default function Navigation(){
-    return <div>
-        <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about-us">about-us</Link></li>
-        </ul>
-        
-    </div>
+import styles from "../../styles/navigation.module.css";
+export default function Navigation() {
+  return (
+    <nav className={styles.nav}>
+      <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/about-us">about-us</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
